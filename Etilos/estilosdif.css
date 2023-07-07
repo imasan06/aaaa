@@ -1,0 +1,75 @@
+
+body {
+    background-image: url('/img/LOGO-PROYECCION-SOCIAL-Y-EXTENSION-UNIVERSITARIA.jpeg');
+    background-size: cover;
+    position: absolute;
+    left: 270px;
+    margin-top: 250px;
+    z-index: 1;
+}
+.titulo{
+    position: absolute;
+    text-align: center;
+    font-family: 'Outfit';
+    margin-top: -170px;
+    font-size: 35px;
+    left: 335px;
+    font-family: 'Outfit';
+    
+}
+.boton-agregar{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: -150px;
+
+
+}
+.botoncancelat{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: -150px;
+
+
+}
+.botoncancelat label{
+    position: absolute;
+    color: black;
+    border-radius:  6px;
+    padding: 10px 15px;
+    margin-top: 500px;
+    background-color: #4660B8;
+    font-family: 'Outfit';
+    font-size: 14px;
+    transition: .3s;
+    margin-left: 900px;
+
+}
+.botoncancelat label:hover{
+    background-color: #8090c7;
+}
+.boton-agregar label{
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'Outfit';
+    transition: .3s;
+    padding: 10px 15px;
+    background-color: #4660B8;
+}
+.boton-agregar label:hover{
+    background-color: #8090c7;
+}
+
+
+.centered {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+.containertodo{
+    border-radius: 10px;
+    margin-left: -90px;
+    margin-top: -200px;
+    height: 850px;
+    padding: 100px;
+    background-color: rgb(255, 255, 255);
+}
+

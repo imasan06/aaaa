@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:  #ccf2fc;
+    border-radius:3px ;
+    color: rgb(0, 0, 0);
+    width: 600px;
+    margin-left: 20px;
+    margin-top: 1px;
+    font-size: 12px;
+    position: relative;
+}
+
+.container .headertable{
+    border-bottom:rgb(31, 30, 30) ;
+    padding: 12px;
+    display: flex;
+    align-items: baseline;
+}
+.container .headertable .search{
+    width: 30%;
+    margin-left: 70%;
+}
+
+.search-input{
+    width: 100%;
+    background-color:rgb(19, 177, 216);
+    display: block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: solid 1px white;
+    color: white;
+}
+
+.footertable{
+    padding: 12px;
+    display: flex;
+    align-items: baseline;
+}
+
+.pages{
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+
+.pages ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.pages ul li{
+    display: inline-block;
+    margin: 2px;
+background: #3282b8;
+}
+
+.pages ul li button{
+
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.pages ul li button:hover{
+    background: #3282b8;
+    color: black;
+
+}
+
+.pages ul li span{
+    background-color:#3282b8;
+    border-radius: 3px;
+}
+
+.pages ul li button, .pages ul li span{
+    padding:5px;
+}
+
+.datatable{
+    border-collapse:collapse ;
+    width: 100%;
+
+}
+
+.datatable th, .datatable td{
+    padding: 12px;
+}
+
+.datatable th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px black ;
+}
+
+
+.datatable td{
+    border-bottom: solid 1px black;
+}
+
+.datatable tbody tr:nth-child(even){
+    background-color:rgb(19, 177, 216);
+}
+/*
+GRAFICO-----------------------------------------
+*/
+.graft{
+    width: 340px;
+    height: 400px;
+    margin-left: 625px;
+    background: #ccf2fc;
+    top: 5px;
+    position: absolute;
+    border-radius: 50px;
+}
+/*
+BOTONES DE LA TABLA
+*/
+#myChart{
+    width: 400px;
+    height: 400px;
+}
+
+
+.icon{
+    width: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.icon span{
+    transition: .4s ease-out all;
+    position: relative;
+    left: 1px;
+}
+
+.icon:hover span{
+    left: 50px;
+    color:rgb(19, 177, 216) ;
+}
+
+.icono{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: -40px;
+    transition: .3s ease-in-out all;
+    opacity: 0;
+}
+
+.icon svg{
+    color: rgb(19, 177, 216);
+    width: 15px;
+    height: 15px;
+    
+}
+
+.icon:hover{
+    background:rgb(0, 0, 0);
+}
+
+.icon:hover .icono{
+    left:510px;
+    opacity: 1;
+}

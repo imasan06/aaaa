@@ -1,0 +1,164 @@
+*{
+    margin-top: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(58, 58, 212);
+    display: flex;
+    flex-direction: row;
+    width: 980px;
+    margin: auto;
+}
+
+header #container{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    flex-direction: row;
+}
+
+header button{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: initial;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.contetodo{
+    width: 980px;
+    height: 500px;
+    background: rgb(73, 194, 194);
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+
+.arriba{
+    width: 980px;
+    height: 230px;
+    display: flex;
+}
+
+.ader{
+    width: 490px;
+    height: 230px;
+    display: flex;
+
+}
+
+.aizq{
+    width: 490px;
+    height: 330px;
+    background-color: aliceblue;
+}
+
+.abajo{
+    width: 980px;
+    height: 230px;
+    display: flex;
+}
+
+
+.bder{
+    width: 490px;
+    height: 230px;
+    background-color: beige;
+}
+
+.bizq{
+    width: 490px;
+    height: 100px;
+    position: relative;
+
+}
+
+.button-wrapper{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.container {
+    display: flex;         
+    justify-content: center;         
+    align-items: center;
+    height: auto;
+    }
+    
+    .box {
+    width: 190px;
+    padding: 20px; 
+    border: 1px solid #ccc;   
+    border-radius: 5px;
+      text-align: center;
+
+      background-color: rgb(43, 101, 124);
+    }
+
+    
+    
+    button {
+      
+     
+    padding: 10px 20px;
+      
+     
+    background-color: #4CAF50;
+      
+     
+    color: white;
+      
+     
+    border: none;
+      
+     
+    border-radius: 4px;
+      
+     
+    cursor: pointer;
+    }
+    
+    button:hover {
+      
+     
+    background-color: #45a049;
+    }
+
+
+    .calendar {
+        width: 480px;
+        height: 230px;
+    
+      }
+      
+      table {
+        width: 100%;
+        height: 100%;
+        
+       
+      border-collapse: collapse;
+      }
+      
+      th, td {
+        
+        text-align: center;
+        border: 1px solid black;
+      }
+      
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      
+      th {
+        background-color: #f2f2f2;
+      }

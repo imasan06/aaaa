@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Etilos/css-evaluacion2.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="headertable">
+            <div class="search">
+                <input type="text" id="inputbus" class="search-input">
+            </div>
+        </div>
+        
+        <div>
+            <table id="datatable" class="datatable">
+                <thead>
+                    <th>Nombre del proyecto</th>
+                    <th>Convenio</th>
+                    <th>Semestre</th>
+                    <th>tipo</th>
+                    <th>ciclo</th>
+                    <th>NºCurso</th>
+                    <th>Duracion</th>
+                    <th>Evaluar</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vallecito</td>
+                        <td>Vigente</td>
+                        <td>23-1</td>
+                        <td>Social</td>
+                        <td>III</td>
+                        <td>2</td>
+                        <td>54dias</td>
+                        <td>
+                            <button class="icon" onclick="irAPagina()">
+                               <div class="icono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                                  </svg>                               </div>
+                               <span>II</span>    
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Carrion</td>
+                        <td>Vigente</td>
+                        <td>23-1</td>
+                        <td>Social</td>
+                        <td>III</td>
+                        <td>2</td>
+                        <td>54dias</td>
+                        <td><button class="icon">
+                            <div class="icono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                                  </svg>
+                            </div>
+                            <span>II</span>    
+                         </button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Valentina</td>
+                        <td>Vigente</td>
+                        <td>23-1</td>
+                        <td>Social</td>
+                        <td>III</td>
+                        <td>2</td>
+                        <td>54dias</td>
+                        <td><button class="icon">
+                            <div class="icono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                                  </svg>
+                            </div>
+                            <span>II</span>    
+                         </button></td>
+                    </tr>
+
+                    <tr>
+                        <td>El olviar</td>
+                        <td>Vigente</td>
+                        <td>23-1</td>
+                        <td>Social</td>
+                        <td>III</td>
+                        <td>2</td>
+                        <td>54dias</td>
+                        <td >
+                            <button class="icon">
+                            <div class="icono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                                  </svg>
+                            </div>
+                            <span>II</span>    
+                         </button>  
+                         </button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Wilmer</td>
+                        <td>Vigente</td>
+                        <td>23-1</td>
+                        <td>Social</td>
+                        <td>III</td>
+                        <td>2</td>
+                        <td>54dias</td>
+                        <td><button class="icon">
+                            <div class="icono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                                  </svg>
+                            </div>
+                            <span>II</span>    
+                         </button></td>
+                    </tr>
+
+                    <tr>
+                        <td>David</td>
+                        <td>Vigente</td>
+                        <td>23-1</td>
+                        <td>Social</td>
+                        <td>III</td>
+                        <td>2</td>
+                        <td>54dias</td>
+                        <td><button class="icon">
+                            <div class="icono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                                  </svg>
+                            </div>
+                            <span>II</span>    
+                         </button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Aguas Turbias</td>
+                        <td>Vigente</td>
+                        <td>23-1</td>
+                        <td>Social</td>
+                        <td>III</td>
+                        <td>2</td>
+                        <td>54dias</td>
+                        <td><button class="icon">
+                            <div class="icono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                                  </svg>
+                            </div>
+                            <span>II</span>    
+                         </button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Valle</td>
+                        <td>Vigente</td>
+                        <td>23-1</td>
+                        <td>Social</td>
+                        <td>III</td>
+                        <td>2</td>
+                        <td>54dias</td>
+                        <td><button class="icon">
+                            <div class="icono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                                  </svg>
+                            </div>
+                            <span>II</span>    
+                         </button></td>
+                    </tr>
+
+                    <tr>
+                        <td>La planicie</td>
+                        <td>Vigente</td>
+                        <td>23-1</td>
+                        <td>Social</td>
+                        <td>III</td>
+                        <td>2</td>
+                        <td>54dias</td>
+                        <td><button class="icon">
+                            <div class="icono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                                  </svg>                            </div>
+                            <span>II</span>    
+                         </button></td>
+                    </tr>
+
+                    <tr>
+                        <td>23 de octubre</td>
+                        <td>Vigente</td>
+                        <td>23-1</td>
+                        <td>Social</td>
+                        <td>III</td>
+                        <td>2</td>
+                        <td>54dias</td>
+                        <td><button class="icon">
+                            <div class="icono">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+                                  </svg>                            </div>
+                            <span>II</span>    
+                         </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footertable">
+            <div class="list-items">
+                <select name="n-entries" id="n-enties" class="n-entries">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+            
+            <div class="pages">
+                <ul>
+                    <li><span class="active">1</span></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                    <li><button>4</button></li>
+                    <li><span>...</span></li>
+                    <li><button>9</button></li>
+                    <li><button>10</button></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="graft">
+        
+        <canvas id="miGraficoCircular"></canvas>
+
+    </div>
+
+    <script src="../js/scrip-evaluar2.js"></script>
+    
+</body>
+</html>

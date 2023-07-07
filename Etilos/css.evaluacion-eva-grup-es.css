@@ -1,0 +1,10 @@
+.contetodo{
+    width: 980px;
+    height: 500px;
+    background: rgb(252, 49, 49);
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid black;
+    overflow: auto
+}
+

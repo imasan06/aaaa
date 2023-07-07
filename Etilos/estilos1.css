@@ -1,0 +1,144 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+/* 
+clases
+etiquetas
+id
+style
+
+*/
+
+
+
+body{
+    
+    background-image: url(../img/LOGO-PROYECCION-SOCIAL-Y-EXTENSION-UNIVERSITARIA.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+header{
+    width: 100% ; 
+    height: 80px;
+    background:  rgb(160, 202, 245);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+
+
+
+.nav{
+    width: 300px;
+    height: 100%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    z-index: 300;
+
+    transition: all 500ms;
+    
+}
+
+.togle-btn{
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.contenido{
+
+    
+}
+
+.nav__link{
+    color: white;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+.a{
+    color: white;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+
+.nav__link--inside:hover{
+    background: rgb(179, 236, 217); 
+
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background:  rgb(0, 128, 255);
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+
+transform: rotate(90deg);
+transition: transform .3s ;
+
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: tranform .3s;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #403030;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+.nav__side_move{
+
+    width: 70px;
+}
+
+.contenido-display{
+margin-left: 100px;
+
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CRONOGRAMA</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><!--Cagando Query-->
+	<link rel="stylesheet" href=/estilos.css">
+	<link id="tema" rel="stylesheet" href="css/rojo.css">
+	<script type="text/javascript" src="js/Acciones.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h2 id="titulo">CRONOGRAMA</h2>
+
+		<div id="selector-theme">
+		
+		</div>
+
+		<a href="javascript:abrir()">
+			<button id="btn">Siguiente</button>
+		</a>
+
+	<table id="tabla1">
+		<thead>
+			<tr>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+				<th>6</th>
+				<th class="festivo">7</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Domingo</td>
+				<td>Lunes</td>
+				<td>Martes</td>
+				<td>Miércoles</td>
+				<td>Jueves</td>
+				<td>Viernes</td>
+				<td>Sábado</td>
+			</tr>
+			<tr>
+				<td class="act">actividad 1</td>
+				<td class="act">actividad 2</td>
+				<td class="act">actividad 3</td>
+				<td class="act">actividad 4</td>
+				<td class="act">actividad 5</td>
+				<td class="act">actividad 6</td>
+				<td class="act">Numeros Binarios</td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th>8</th>
+				<th>9</th>
+				<th>10</th>
+				<th>11</th>
+				<th>12</th>
+				<th>13</th>
+				<th class="festivo">14</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Domingo</td>
+				<td>Lunes</td>
+				<td>Martes</td>
+				<td>Miércoles</td>
+				<td>Jueves</td>
+				<td>Viernes</td>
+				<td>Sábado</td>
+			</tr>
+			<tr>
+				<td class="act">actividad 1</td>
+				<td class="act">actividad 2</td>
+				<td class="act">actividad 3</td>
+				<td class="act">actividad 4</td>
+				<td class="act">actividad 5</td>
+				<td class="act">actividad 6</td>
+				<td class="act">Representacion de imagenes</td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th>15</th>
+				<th>16</th>
+				<th>17</th>
+				<th>18</th>
+				<th>19</th>
+				<th>20</th>
+				<th class="festivo">21</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Domingo</td>
+				<td>Lunes</td>
+				<td>Martes</td>
+				<td>Miércoles</td>
+				<td>Jueves</td>
+				<td>Viernes</td>
+				<td>Sábado</td>
+			</tr>
+			<tr>
+				<td class="act">actividad 1</td>
+				<td class="act">actividad 2</td>
+				<td class="act">actividad 3</td>
+				<td class="act">actividad 4</td>
+				<td class="act">actividad 5</td>
+				<td class="act">actividad 6</td>
+				<td class="act">actividad 7</td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th>22</th>
+				<th>23</th>
+				<th>24</th>
+				<th>25</th>
+				<th>26</th>
+				<th>27</th>
+				<th class="festivo">28</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Domingo</td>
+				<td>Lunes</td>
+				<td>Martes</td>
+				<td>Miércoles</td>
+				<td>Jueves</td>
+				<td>Viernes</td>
+				<td>Sábado</td>
+			</tr>
+			<tr>
+				<td class="act">actividad 1</td>
+				<td class="act">actividad 2</td>
+				<td class="act">actividad 3</td>
+				<td class="act">actividad 4</td>
+				<td class="act">actividad 5</td>
+				<td class="act">actividad 6</td>
+				<td class="act">actividad 7</td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th>29</th>
+				<th>30</th>
+				<th>31</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Domingo</td>
+				<td>Lunes</td>
+				<td>Martes</td>
+			</tr>
+			<tr>
+				<td class="act">actividad 1</td>
+				<td class="act">actividad 2</td>
+				<td class="act">actividad 3</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<span id="mensaje"></span>
+
+	<div id="formulario">
+
+		<div id="cerrar">
+			<a href="javascript:cerrar()"><img src="img/error.ico" ></a>
+		</div>
+
+		<h2>Datos</h2>
+		<form action="javascript:enviada()"  accept-charset="utf-8">
+			<label for="correo">Nombre del presupuesto</label><br><br>
+			<input type="text" id="correo" placeholder="Escriba aqui"><br><br>
+			<label for="fecha">Fecha</label><br><br>
+			<input type="date" id="fecha" min="2020-12-01" max="2023-12-31"><br><br>
+			<label for="Monto">Monto</label><br><br>
+			<textarea id="Monto" cols="30" rows="3" placeholder="Monto"></textarea><br><br>
+			<button id="env" type="enviar">Enviar</button><br><br>
+		</form>
+
+
+	</div>
+	
+</body>
+</html>

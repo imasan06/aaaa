@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Etilos/estilos2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://upeu.edu.pe/fsalud/wp-content/uploads/sites/6/2022/03/Logo-fcs.svg" alt="">
+    </div>
+    <div id="filtroContainer">
+        <label for="filtroInput">Filtro:</label>
+        <input type="text" id="filtroInput" placeholder="Ingrese una palabra clave" onkeyup="filtrarTabla()">
+      </div>
+    
+      <button id="agregarBtn" onclick="openModal()">Agregar Registro</button>
+    
+      <table id="tablaDatos">
+        <thead>
+          <tr>
+            <th style="background-color: #65d3ee; color: #6c00fa;">Nombre de Convenio</th>
+            <th style="background-color: #65d3ee; color: #6c00fa;">Semestre</th>
+            <th style="background-color: #65d3ee; color: #6c00fa;">Fecha</th>
+            <th style="background-color: #65d3ee; color: #6c00fa;">Localidad</th>
+            <th style="background-color: #65d3ee; color: #6c00fa;">Tiempo de Vigencia</th>
+            <th style="background-color: #65d3ee    ; color: #6c00fa;">Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tbodyDatos">
+          <!-- Aquí se agregarán los registros -->
+        </tbody>
+      </table>
+    </div>
+  <!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 style="text-align: center;">Regsistar Convenio</h2>
+      <input type="text" id="nombreConvenio" class="modal-input" placeholder="Nombre de Convenio">
+      <input type="text" id="semestre" class="modal-input" placeholder="Semestre">
+      <input type="text" id="fecha" class="modal-input" placeholder="Fecha">
+      <input type="text" id="localidad" class="modal-input" placeholder="Localidad">
+      <input type="text" id="tiempoVigencia" class="modal-input" placeholder="Tiempo de Vigencia">
+      <div class="modal-buttons">
+        <button onclick="cancelar()" style="background-color: #ccc;">Cancelar</button>
+        <button onclick="agregar()" style="background-color: #4CAF50;">Agregar</button>
+      </div>
+    </div>
+  </div>
+      <script src="../js/funcion.js"></script>
+</body>
+</html>
